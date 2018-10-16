@@ -1,0 +1,10 @@
+- how to use <<<SQL or <<<HTML in files (20)
+  - this is the heredoc syntax which behaves just like a double-quoted string without the quotes i.e. you don't have to escape single or double quotes, newlines are retained without escaping, variables are expanded, and escape characters can be used.
+  - http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc
+  - the identifier must contain only alphanumeric characters and underscores, and must start with a non-digit character or underscore: the use of SQL and HTML here does not appear to be significant to the interpretation of the heredoc but rather for ease of code reading
+  - the line with the closing identifier must contain no other characters, except a semicolon (;)
+  - the identifier may not be indented, and there may not be any spaces or tabs before or after the semicolon
+  - the first character before the closing identifier must be a newline as defined by the local operating system. This is \n on UNIX systems, including macOS.
+  - the closing delimiter must also be followed by a newline.
+  - cf. string parsing for details of how variables are interpreted http://uk1.php.net/manual/en/language.types.string.php#language.types.string.parsing
+  - cf. nowdocs which are similar, but there is no parsing within the nowdoc
