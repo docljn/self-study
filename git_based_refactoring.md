@@ -1,8 +1,9 @@
 # Ashley Ellis Pierce: Git Driven Refactoring
 https://brightonruby.com/2018/git-driven-refactoring-ashley-ellis-pierce/
 - every design problem has a refactoring technique
- - sandy metz: get a whiff of this talk
- https://www.youtube.com/watch?v=PJjHfa5yxlU
+  - sandy metz:
+    - get a whiff of this talk
+    - https://www.youtube.com/watch?v=PJjHfa5yxlU
 
 - how to find the design problem so you know how to refactor it?
 - you need context to recognise design patterns

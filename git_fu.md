@@ -121,7 +121,7 @@ https://git.wtf/
     - ``` git log commit-sha --patch```
 #### The Pickaxe
 - ```git log -S "search_string_eg_method_name" --patch --reverse```
-- commit message where the quoted bit of code changed
+- commit message where the quoted bit of code first changed
 - full diff
 - reverse chronological order so first change is at the top
 
