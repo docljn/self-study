@@ -6,7 +6,7 @@
 - Situation: This is the state of affairs
   - A clear, crisp, unambiguous statement of the facts, making your assumptions explicit
 - Complication: This is what is changing
-  - The thing that's changed, making things harder
+  - The thing that's changed, making things more difficult
   - This is what is stopping us from making progress
 - Question: What should we/you do
   - should be obvious based on S&C

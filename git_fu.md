@@ -1,76 +1,131 @@
-# Git Fu
-## Sources
-https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
-
-https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config
-
-http://www.pauline-vos.nl/git-legit-cheatsheet/
-
-https://brightonruby.com/2018/a-branch-in-time-tekin-suleyman/
-
-https://www.raywenderlich.com/2288-git-tutorial-git-fu-with-the-command-line
-
-https://railsware.com/blog/2014/08/11/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/
-
-https://medium.com/@gabriellamedas/git-rebase-and-git-rebase-onto-a6a3f83f9cce
-
-https://medium.com/@eclectusmedia/a-little-git-fu-for-the-budding-young-grasshopper-programmer-ecf2873fc85d
-
-https://git.wtf/
+# Git Fundi
 
 ## Setup
-- user name and email
-  - ```git config --global user.name “Your Name”```
-  - ```git config --global user.email “your@email.address”```
-- the full diff is visible when writing the commit message
+### User name and email
+- ```git config --global user.name “Your Name”```
+- ```git config --global user.email “your@email.address”```
+- if you do not want to have your private email address visible on github
+  - log into github
+    - go to Personal Settings -> Emails
+    - tick / enable: keep my email address private  
+    - take a note of the generated email address
+  - set your global git config user.email to the generated email address
+- if you want a different name and/or email in a specific git repo
+  - ```git config user.name "Local Name"```  
+  - ```git config user.email "local@email.address"```  
+- if you need two different github accounts on the same machine
+  - e.g. personal & work
+  - https://medium.freecodecamp.org/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca
+
+### Editor preferences
+- by default, git will use a terminal-based editor like vim when opening files
+- to change this to, e.g. Atom
+  - ```git config --global core.editor "atom --wait"```
+
+### Display preferences
+- make the full diff visible when writing a commit message
   - ```git config --global commit.verbose true```
 - use colours
   - ```git config --global color.ui auto```
 
+### Aliasing
+- you can add keyboard shortcuts by editing your global ~/.gitconfig file
+  ```
+  [alias]
+  name = long version of git command
+  ```
+- you can also add them directly from the commandline
+  ```
+  git config --global alias.c commit
+  ```
+- you can specify repo-specific aliases as well by editing .git/config in the repo, or from the commandline as before
+  ```
+  git config alias.f 'fetch origin'
+  ```
+- prefix the name of the shortcut with ```git``` to call it from the commandline
+
+#### Some of my favourite aliases
+- checkout the last branch I was on
+  - ```last = checkout @{-1}```
+- show me a short version of the logs with colour highlighting and without any merges
+  - ```sl = log --no-merges --format=\"%Cred%ad%Creset %Cblue%an%Creset %C(yellow)%h%Creset %Cgreen%s%Creset%n%b\"```
+- show me a short version of the logs including merges
+  - ```sl-wm =  log --format=\"%Cred%ad%Creset %Cblue%an%Creset %C(yellow)%h%Creset %Cgreen%s%Creset%n%b\"```
+- push my changes to the remote unless someone else has changed the files
+  - ```force = push --force-with-lease```
+- add the changes I've staged to the last commit without any other changes
+  - ```fix = commit --amend --no-edit```  
+
+
 ## Writing (and ReWriting) Git History
 
-### Why do it this way: someone will need to read it...
+### Why? someone will need to read it...
 - Don't assume you'll always have access to the trello card and board
   - what if we move to another project management tool?
 - when writing a commit message, make sure you include the why in the body.
-  - consider not using ``` git commit -m ``` as the commandline isn't good for structuring text but rather ``` git commit ```
+  - consider not using ``` git commit -m ``` as the commandline isn't good for structuring text
+  - use ``` git commit ``` and then use the default editor
+- suggested commit structure
+  -
+  ```
+  "AccountName : Purpose/Result of Change (50 characters)
+  <blank line> (essential)
+  Explanation in as many or as few words as you need
+  Wrap at 72 characters
+  Put things you would normally add in code comments here
+  Consider adding any tracking reference for context"
+  ```
+- it is now possible to write a commit with multiple authors on github
+  - useful for sharing credit/blame when pairing or mobbing
+  -
+  ```
+  "Title
+  <blank line>
+  Body
+  <blank line>
+  <blank line>
+  Co-authored-by: name <github@registered.email.address>
+  Co-authored-by: name <github@registered.email.address>"
+  ```
+  - https://help.github.com/articles/creating-a-commit-with-multiple-authors/
 
 ### Rewriting history:
 - treat your commits as mutable until they get merged into master
   - unless you are collaborating on one branch!
 
 #### How to do it
-- Return all changes in a commit to the current working directory
+- return all changes in a commit to the current working directory
   - ``` git reset HEAD~ ```
-- Delete the last commit including all the code changes
+- delete the last commit including all the code changes
   - ``` git reset --hard HEAD~ ```
-- Add changes that should have been in the last commit without changing the commit message
+- add changes that should have been in the last commit without changing the commit message
   - ``` git add filename_of_changed_file```
   - ``` git commit --amend --no-edit```
-- Fine-grained commit control
+- fine-grained commit control
   - add changes you have made to a single file in several separate commits
     - ``` git add --patch filename```
-- Incorporating changes from another branch
+- incorporating changes from another branch
   - pull changes from one branch into your own, file by file
     - ``` git checkout source-branch-name file-to-checkout ```
   - pull changes from a specific commit into your own branch, file by file
     - ``` git checkout source-sha file-to-checkout ```
   - pull changes into your branch, commit by commit
     - ``` git cherry-pick sha-of-desired-commit ```
-- Moving changes from the current live situation to anywhere else
+- moving changes from the current live situation to anywhere else
   - ``` git stash```
   - ``` git checkout commit where changes belong```
   - ``` git stash apply``` (leaves changes in the stash for future use - use pop to remove)
-- Merge a commit into the last one, interactively (see Interactive Rebase below)
+- merge a commit into the last one, interactively (see Interactive Rebase below)
   - ``` git rebase -i HEAD~``` ...
-- Abort the current rebase and return to the original code status
+- abort the current rebase and return to the original code status
   - ``` git rebase --abort```
 
 #### Interactive Rebase
 - *CARE*
   - if you rebase you will need to force push
   - only do this to your own branch, not a shared branch
-    - ``` git push --force-with-lease``` will warn if there are any unexpected changes on the upstream branch
+    - ``` git push --force-with-lease```
+    - warns if there are any unexpected changes on the upstream branch
 - selecting/changing/etc commits
   - drop: exclude this commit from the rebase (deleting the line also works)
   - pick: include this commit in the rebase
@@ -79,7 +134,10 @@ https://git.wtf/
   - reword: include this commit in the rebase, and edit the commit message
   - edit: stop after this commit has been applied, edit the files, commit, and continue
   - exec: execute the supplied shell script
-- to continue an interactive rebase session
+- if there is a conflict, the rebase will stop to allow you to resolve the conflict
+  - because of the way rebase replays your commits you may end up having to resolve the same conflict many times
+  - don't panic  
+- to continue a rebase
   - ``` git rebase --continue```
 - you can stash, run tests, etc during an interactive rebase session...
 
@@ -106,13 +164,7 @@ https://git.wtf/
 - which files have unresolved merge conflicts
   - ``` git diff --name-only --diff-filter=U ```
 
-### Housekeeping
-- get rid of branches which are referenced locally but no longer exist on origin
-  - ``` git remote prune origin ```
-- fetch all remote branches, including new branches, and get rid of local references to branches that no longer exist on origin
-  - ``` git fetch -p ```
-
-### Specific Changes
+### Finding Specific Changes
 #### Search Lite
 - when was this line of code changed, and by whom
   - ``` git blame filename```
@@ -124,6 +176,40 @@ https://git.wtf/
 - commit message where the quoted bit of code first changed
 - full diff
 - reverse chronological order so first change is at the top
+- tends to be less successful on a large codebase with many duplicated names
 
 ### Which commit broke this
 - ``` git bisect start ```
+
+## Git Housekeeping
+- get rid of branches which are referenced locally but no longer exist on origin
+  - ``` git remote prune origin ```
+- fetch all remote branches, including new branches, and get rid of local references to branches that no longer exist on origin
+  - ``` git fetch -p ```
+
+## Safe Git Practice
+- https://github.com/Gazler/githug
+
+
+## Sources
+- https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
+- https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config
+- http://www.pauline-vos.nl/git-legit-cheatsheet/
+- https://brightonruby.com/2018/a-branch-in-time-tekin-suleyman/
+- https://www.raywenderlich.com/2288-git-tutorial-git-fu-with-the-command-line
+- https://railsware.com/blog/2014/08/11/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/
+- https://medium.com/@gabriellamedas/git-rebase-and-git-rebase-onto-a6a3f83f9cce
+- https://medium.com/@eclectusmedia/a-little-git-fu-for-the-budding-young-grasshopper-programmer-ecf2873fc85d
+- https://git.wtf/
+- https://medium.freecodecamp.org/github-privacy-101-how-to-remove-personal-emails-from-your-public-repos-58347b06a508
+- https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config
+- https://medium.freecodecamp.org/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca
+- https://help.github.com/articles/creating-a-commit-with-multiple-authors/
+
+
+### Future Study Material
+- https://medium.freecodecamp.org/github-extensions-to-boost-your-productivity-4692ad2b1796
+- https://medium.freecodecamp.org/4-steps-to-build-an-automated-testing-pipeline-with-gitlab-ci-24ccab95535e
+- https://medium.freecodecamp.org/improve-development-workflow-of-your-team-with-githooks-9cda15377c3b
+- https://medium.freecodecamp.org/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a
+- https://github.com/github/hub
