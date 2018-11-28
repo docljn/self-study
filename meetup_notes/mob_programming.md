@@ -4,14 +4,13 @@
 Tech Suggestion
 - 80" 4k monitor for a team of 4-5
 
-Software devs are at the pointy end. We get told what to do.
-Consider how to avoid activities that are contrary to your wellbeing.
+Software devs are at the pointy end. We get told what to do.  Consider how to avoid activities that are contrary to your wellbeing.
 
-"The value of another's experience is to give us hope, not to tell us how to whether to proceed."
+"The value of another's experience is to give us hope, not to tell us how or whether to proceed."
   -- Peter Block
 
-MontyBoy.net
-- we all tend to take random data and find patterns
+Caveat
+- we all tend to take random data and find patterns, so this is Woody's interpretation of why Mob Programming works.
 
 Almost nobody at the meet up had tried mob programming, although most had heard of it.
 
@@ -111,14 +110,14 @@ Share the cognitive load
 **psychological flow**
 - you and the thing you are doing cannot be separated
 - requires the right balance between challenge and skills
-  - Mihaly Csikszentmihalyi
+  -- Mihaly Csikszentmihalyi (https://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi)
 
 - do we prevent flow when we work as a team?
   - no
   - you all focus on one task
   - you each bring your own speciality/skill
   - you have everyone you need in the same place at the same time to get the work done
-- c.f 'Team Flow, from concept to application', Jef van den Hout  
+- c.f 'Team Flow, from concept to application' -- Jef van den Hout (https://flowconcepts.nl/)
 
 **lean flow**
 - complete production of one piece, from start to finish
@@ -126,15 +125,15 @@ Share the cognitive load
   - as little work in process (inventory)
   - as little waiting between operations (queueing)
 - as possible
-- c.f. Flow, The principles of product development, Donald Reinertsen
+- c.f. Flow, The principles of product development -- Donald Reinertsen (http://reinertsenassociates.com/category/tips/)
 
 - queues are the root cause of the majority of economic waste in product development
-  - increase
+  - queues increase
     - time from inbox to delivery (cycle time)
     - risk
     - variability (inconsistency in operations/support particularly if there's a long delay between a person doing something and doing it again)
     - overhead
-  - decrease
+  - queues decrease
     - quality
     - motivation
 
