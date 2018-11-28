@@ -117,7 +117,7 @@ Share the cognitive load
   - you all focus on one task
   - you each bring your own speciality/skill
   - you have everyone you need in the same place at the same time to get the work done
-- c.f 'Team Flow, from concept to application' -- Jef van den Hout (https://flowconcepts.nl/)
+- c.f 'Team Flow, from concept to application' -- Jef van den Hout (https://pure.tue.nl/ws/files/47500481/20161208_Hout_van_den.pdf)
 
 **lean flow**
 - complete production of one piece, from start to finish
