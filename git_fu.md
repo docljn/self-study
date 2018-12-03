@@ -47,6 +47,8 @@
 #### Some of my favourite aliases
 - checkout the last branch I was on
   - ```last = checkout @{-1}```
+- show me the diff between staged files and the last commit
+  - ```dc = diff --cached```
 - show me a short version of the logs with colour highlighting and without any merges
   - ```sl = log --no-merges --format=\"%Cred%ad%Creset %Cblue%an%Creset %C(yellow)%h%Creset %Cgreen%s%Creset%n%b\"```
 - show me a short version of the logs including merges
@@ -75,6 +77,17 @@
   Put things you would normally add in code comments here
   Consider adding any tracking reference for context"
   ```
+- using vim with the correct highlighting and plugins makes this easy
+  - your vim will probably come with a defaults.vim file in /usr/local/share/vim/vim81 (mac) with all of this setup already
+  - ```syntax on``` means the text will change colour when your commit message title goes over 50 characters
+  - ```filetype indent plugin on``` means vim will autowrap at whatever textwidth is set to (72-80 is commonplace)
+  - check that wrapping and indents is enabled in vim by typing ```:filetype``` inside your vim editor
+    - you want
+    ```
+    filetype detection:ON plugin:ON indent:ON
+    ```
+  - if this isn't happening, you may need to edit your ~/.vimrc (but usually it isn't necessary!)  
+
 - it is now possible to write a commit with multiple authors on github
   - useful for sharing credit/blame when pairing or mobbing
   -
@@ -89,7 +102,7 @@
   ```
   - https://help.github.com/articles/creating-a-commit-with-multiple-authors/
 
-### Rewriting history:
+### Rewriting history
 - treat your commits as mutable until they get merged into master
   - unless you are collaborating on one branch!
 
@@ -141,6 +154,11 @@
   - ``` git rebase --continue```
 - you can stash, run tests, etc during an interactive rebase session...
 
+### Merging <!-- TODO: add more here-->
+- abort a current merge
+  - ``` git merge --abort```
+- useful merge commit message
+  - ``` git merge -m 'message here'```  
 
 ## Reading Git History
 
@@ -164,13 +182,47 @@
 - which files have unresolved merge conflicts
   - ``` git diff --name-only --diff-filter=U ```
 
+### Your Local Changes
+- unstaged changes since the last commit
+  - ``` git diff ```
+- staged changes since the last commit
+  - ``` git diff --cached```
+- to see unicode characters inline (like emojis)
+  - ```git --no-pager diff```  
+
+#### second-order-diff
+  -- Tom Moertel
+- use case  
+  - when you're doing a global find/replace with a regex
+  - you need to keep rerunning the script until you have found all the edge cases
+  -
+  ```bash
+  git status
+  run script
+  git diff
+  git stash # your reviewed diff
+    # current branch is now back to original state before any changes
+  run altered script
+  git diff stash{0}
+    # compare the current branch to the reviewed diff
+  git stash # your new reviewed diff
+    # current branch is now back to original state before any changes
+  rerun script
+  git diff stash{0}
+  git stash
+  rerun
+  ```  
+
 ### Finding Specific Changes
+
 #### Search Lite
 - when was this line of code changed, and by whom
+  - most modern IDEs will include this functionality
   - ``` git blame filename```
 - what was the context of that change:
   - commit message and full diff for the commit show in git blame
     - ``` git log commit-sha --patch```
+
 #### The Pickaxe
 - ```git log -S "search_string_eg_method_name" --patch --reverse```
 - commit message where the quoted bit of code first changed
@@ -186,10 +238,39 @@
   - ``` git remote prune origin ```
 - fetch all remote branches, including new branches, and get rid of local references to branches that no longer exist on origin
   - ``` git fetch -p ```
+- check what's being ignored by git
+  - useful if you're sending a full copy of your local files somewhere
+  - you really want to be sure there are no secrets about to be shared
+  - ``` git status --ignored ```
+- temporarily git ignore a file
+  - ``` git update-index --assume-unchanged path_to_file```
+  - and undo that
+  - ``` git update-index --assume-no-unchanged path_to_file```
+
 
 ## Safe Git Practice
 - https://github.com/Gazler/githug
 
+## Github shortcuts
+- I'm sure gitlab and bitbucket have similar
+### canonical url
+- when you are viewing a file/tree/whatever on github, press 'y' and the link will change to reference the precise SHA rather than the link via master
+- even if the branch changes, your link will still take you back to the precise page/commit
+
+### dealing with pull requests
+- github stores all pull requests in your repo
+- even if the fork is deleted you can still track the code
+- ``` git fetch origin pull/id/head:name```
+  - fetches the pull request with id 12 into a local branch named 'pr'
+  - much simpler than setting up the remote etc etc etc
+  - consider aliasing this for a ci process
+
+### quote into replies
+- highlight text, hit 'r'
+
+### find a file in a repo
+- hit 't' then type for a fuzzy search for a filename
+- really useful for any language or frameworkd with many nested directories
 
 ## Sources
 - https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
@@ -205,6 +286,8 @@
 - https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config
 - https://medium.freecodecamp.org/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca
 - https://help.github.com/articles/creating-a-commit-with-multiple-authors/
+- https://vimeo.com/72955426
+
 
 
 ### Future Study Material
