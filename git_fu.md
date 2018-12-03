@@ -109,6 +109,12 @@
 #### How to do it
 - return all changes in a commit to the current working directory
   - ``` git reset HEAD~ ```
+- remove untracked files from the working directory
+  - test first
+  - ``` git clean -n ```
+  - then do it for real
+  - ``` git clean -f ```
+  - there are also ways to remove directories
 - delete the last commit including all the code changes
   - ``` git reset --hard HEAD~ ```
 - add changes that should have been in the last commit without changing the commit message
@@ -127,9 +133,9 @@
 - moving changes from the current live situation to anywhere else
   - ``` git stash```
   - ``` git checkout commit where changes belong```
-  - ``` git stash apply``` (leaves changes in the stash for future use - use pop to remove)
+  - ``` git stash apply``` (leaves changes in the stash for future use - use pop instead of apply to remove)
 - merge a commit into the last one, interactively (see Interactive Rebase below)
-  - ``` git rebase -i HEAD~``` ...
+  - ``` git rebase -i HEAD~```
 - abort the current rebase and return to the original code status
   - ``` git rebase --abort```
 
