@@ -1,4 +1,5 @@
 # Git Fundi
+> Fundi, a word from the Bantu family of African languages, meaning a learned person, usually used for a master-craftsperson, expert or genius.
 
 ## Setup
 ### User name and email
