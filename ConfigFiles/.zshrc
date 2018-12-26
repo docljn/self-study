@@ -59,9 +59,12 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  zsh-autosuggestions
   git
   apache2-macports
 )
+
+ZSH_DISABLE_COMPFIX='true'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,7 +87,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/h
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -100,5 +103,11 @@ alias gst="git status"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# anaconda3 path
+export PATH="$PATH:$HOME/anaconda3/bin"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+
 export PATH="$PATH:$HOME/.rvm/bin"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
