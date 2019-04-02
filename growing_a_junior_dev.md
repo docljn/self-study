@@ -9,14 +9,14 @@
 - [Sumeet Jain](https://www.sumeetjain.com/posts/actionable-tactics-for-leveling-up-devs/)
 
 ## Levelling up: junior actions
-- **on your own**
+### on your own
 - challenge yourself / accept a challenge from your manager
 - fix bugs
 - practice (koans and similar, open source contributions)
 - study design & notice connections
 - write down what you've learned
 - work on your communication, networking and inter-personal skills
-- **with others**
+### with others
 - participate in code review with your peers and seniors
 - pair / mob program
   - discuss expectations before you start
