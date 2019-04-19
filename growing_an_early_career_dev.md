@@ -1,33 +1,57 @@
 # Growing an Early Career Developer
 
-## Video References
-- [Mark Lehman @ RubyHACK 2018](https://www.youtube.com/watch?v=a85F-e_a0pg)
-- [Sumeet Jain @ RailsConf 2018](https://www.youtube.com/watch?v=K0vxOBIyhF0)
-- [Rebecca Poulson @ eurucamp 2015](https://www.youtube.com/watch?v=RK6l_l7TdB8)
-- [Mercedes Bernard @ RubyConf 2018](https://www.youtube.com/watch?v=Qspf0SX_oPs)
-- [Rachel Warbelow @ GORUCO 2015](https://www.youtube.com/watch?v=tYOx8mA5p2c)
-- [Louisa Barrett @ RailsConf 2015](https://www.youtube.com/watch?v=SaNlfSeTWwI)
-- [K Wu @ RailsConf 2014](https://www.youtube.com/watch?v=GJW46x27W1w)
+## References
+### Video
 - [Gretchen Ziegler @ RailsConf 2018](https://www.youtube.com/watch?v=S7cYJumzuL4)
+- [K Wu @ RailsConf 2014](https://www.youtube.com/watch?v=GJW46x27W1w)
+- [Mark Lehman @ RubyHACK 2018](https://www.youtube.com/watch?v=a85F-e_a0pg)
+- [Mercedes Bernard @ RubyConf 2018](https://www.youtube.com/watch?v=Qspf0SX_oPs)
+- [Louisa Barrett @ RailsConf 2015](https://www.youtube.com/watch?v=SaNlfSeTWwI)
+- [Rebecca Poulson @ eurucamp 2015](https://www.youtube.com/watch?v=RK6l_l7TdB8)
+- [Rachel Warbelow @ GORUCO 2015](https://www.youtube.com/watch?v=tYOx8mA5p2c)
+- [Sumeet Jain @ RailsConf 2018](https://www.youtube.com/watch?v=K0vxOBIyhF0)
+- [Markus Prinz @ Kod.io 2014](https://www.youtube.com/watch?v=cBZoZd44PeA)
+-
 
-## Text References
-- [Sumeet Jain](https://www.sumeetjain.com/posts/actionable-tactics-for-leveling-up-devs/)
+### Audio
+- [CodeNewbie Podcast with Ben Orenstein](https://www.codenewbie.org/podcast/how-do-i-level-up)
+- [Good Life Project Podcast with Prof K. Anders Ericsson](https://www.goodlifeproject.com/podcast/anders-ericsson/)
+
+### Text
+- https://graphics8.nytimes.com/images/blogs/freakonomics/pdf/DeliberatePractice(PsychologicalReview).pdf
+
+## Learn how to systematically improve your skills
+- there's lots of advice out there on how to get better at specific parts of coding, but it's hard to find a system that will make you a better coder
+- [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) is a woefully underrated skill
+- simply wanting to improve isn't enough — you also need well-defined goals and the help of a teacher who makes a plan for achieving them: this is the concept of Deliberate Practice.
+- without a coach, you can engage in Purposeful Practice, but the outcome is not guaranteed as you do not have the same short feedback loop and guidance
+  - e.g. write down things which are taking you a long time to achieve, or where you feel inefficient, and then spent 30 mins a day sharpening your tools
+  - engage in spaced repetition to help you consolidate your learning
+
 
 ## Levelling up: early career developer actions
 ### on your own
 - challenge yourself / accept a challenge from your manager
 - fix bugs
-- practice (koans and similar, open source contributions)
+- practice: koans and similar on sites like [Exercism](https://exercism.io/), open source contributions [Code Triage](https://www.codetriage.com/) and [hacktoberfest](https://hacktoberfest.digitalocean.com/), and online courses can be very useful e.g. [The Odin Project](https://www.theodinproject.com/) & [freeCodeCamp](https://learn.freecodecamp.org/), however, be aware that a lot of these are aimed at beginners rather than those hoping to level up. [Upcase](https://thoughtbot.com/upcase/practice) and, to a lesser extent, [gitconnected](https://levelup.gitconnected.com/)  may be an exception there, along with some of the MOOCs on sites like like Udemy & Coursera, & Pluralsight if your employer is paying.
+- read actual books: they can be horribly intimidating, but remember that an author has had a lot more time and input in honing their message than most blog posters ever will. (Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman - Hoover/Oshineye)
+- teach: nothing helps you solidify your learning better: [codebar](https://codebar.io/), [coderdojo](http://coderdojoscotland.com/clubs/)
+- go to meetups: you'll be exposed to ideas and people that you otherwise might have missed
 - study design & notice connections
-- write down what you've learned
+- write down what you've learned: whether that's just for yourself, something to share via slack, or even a blog post
 - work on your communication, networking and inter-personal skills
+- be selective with what you decide to spend your time on: if it isn't a clear yes, then it must be a clear no
+- if you aren't comfortable with unit testing and TDD, now is the time to start
+- if you don't understand how git works, and how and why version control is vital, learn that now
+- things like SOLID, DRY etc, along with CS concepts like Big O Notation can be worth spending time on - if only because it will help you follow what a more experienced coder is talking about and help you learn more quickly
+- vim can be useful, but there are very few situation where you won't be able to use a different editor so be wary of spending too much time learning vim if it won't make much of a difference to your workflow
 ### with others
-- participate in code review with your peers and seniors
+- participate in code review with your peers and seniors [Maria Khalusove & Trisha Gee](https://vimeo.com/182087729)
 - pair / mob program
   - discuss expectations before you start
   - one computer only (possibly multiple keyboards)
   - the less experienced developer has the keyboard first and most often
-  - in a mob, the most experienced developer should not use the keyboard much
+  - in a mob, the most experienced developer should not use the keyboard much, if at all
   - if you tune out, take a break
 - ask for help (rubber duck, then human)
   - when to ask for help
@@ -51,6 +75,8 @@
 
 
 ## Levelling up: manager/supervisor actions
+- define what you want to achieve!
+- be a janitor, not a rockstar: ensure your team gets the credit rather than you
 
 ### why do early career developers suffer
 A lot of developers believe that their true skill lies in their ability to solve any problem alone, given enough time.
@@ -61,6 +87,7 @@ Making someone stronger and more confident through encouragement and support of 
 
 ### Mentoring
 Being skilled at Mentoring does not follow automatically from being skilled at your job: mentoring skills must be actively learned
+- I've got a separate set of notes on that...
 
 ### Things to try when growing your early career developers
 1. Codify a format to use when asking questions
@@ -146,8 +173,7 @@ Being skilled at Mentoring does not follow automatically from being skilled at y
 
 ## How to help your early career devs avoid typical problems/pitfalls
 - NB: expert !== good teacher
-
-Problem 1: Structure (or the lack thereof)
+### Problem 1: Structure (or the lack thereof)
   - develop a long-term plan
     - minimal essential skills that this developer needs now, next week, next month, next year
     - how are we going to get there
@@ -161,12 +187,12 @@ Problem 1: Structure (or the lack thereof)
     - code
     - personal  
 
-Problem 2: Imposter Syndrome    
+### Problem 2: Imposter Syndrome    
   - make sure they know that they are expected to ask for help, and value their questions
   - have and share realistic expectations  
   - allow your new devs to see other developers struggle
 
-Problem 3: Surface-level understanding
+### Problem 3: Surface-level understanding
   - use proven teaching techniques
     - whiteboarding/diagrams mean you process information differently
     - analogies bridge current and new knowledge
@@ -224,3 +250,55 @@ Problem 3: Surface-level understanding
 - women often don't get credit for being helpful, because it's just expected of them
 - make sure you don't get sidelined into the non-tech stuff instead of learning as a developer
 - stay focussed on your goal  
+
+
+
+
+
+### How to stay motivated
+- Define Mastery Goals, Not Performance Ones, For Difficult Problems
+http://www.effectiveengineer.com/blog/frame-your-goal-to-increase-motivation
+
+### When informal onboarding stops working
+http://www.effectiveengineer.com/blog/how-to-build-a-good-onboarding-process-for-new-hires-at-a-startup
+https://www.quora.com/Quora-company/What-is-the-on-boarding-process-for-new-engineers-at-Quora-Is-there-any-such-process-at-all-Does-Quora-train-their-employees-in-a-fashion-similar-to-Facebook-or-are-they-asked-to-start-writing-code-straight-away
+#### some risks of an ad-hoc, absent, or ill-defined onboarding process include:
+
+Weeding out good people who might have been productive had they been given a little more guidance, which would be a shame given how much effort is typically spent on recruiting someone to a company.
+
+Not identifying low performers or bad hires soon enough because there aren’t enough opportunities to evaluate their work or because you’re wondering that maybe you just need to give them a chance to ramp up before they become more productive.
+
+Losing productive output from the new hire because ramping up takes longer than it should have.
+
+Increased stress or reduced happiness of new hires, particularly those who might not have worked in startup-like environments before.
+
+These risks increase as more people get hired, especially if your recruiting pipeline biases toward more inexperienced hires, like college grads in their first full-time job.
+
+As a company, a product, and a codebase get larger, the surface area of things to explore increases, and it becomes more and more difficult for a new person, without any guidance, to figure out on their own what to learn first.
+
+The onboarding process is an opportunity to direct the learning and the activity of a new hire toward what the team believes matters most. Designing a good onboarding process can increase the effectiveness of the rest of the new hire’s time.
+
+
+
+
+
+
+
+### Next steps
+https://thoughtbot.com/upcase/practice
+
+http://www.effectiveengineer.com/blog/how-to-become-a-10x-engineer
+https://medium.com/commit-push/10-ways-to-grow-as-a-developer-in-2017-5f96f890a306
+https://labs.spotify.com/2016/02/08/technical-career-path/
+
+
+### But what if I know I don't want to be a manager?
+Here are some examples of how you might amplify your impact without going into management (and without co-founding a startup, which typically leads to management), based on software engineers I know:
+
+You build tools and abstractions that multiply the output of the engineering teams around you. For example, Jeff Dean, through his contributions to Protocol Buffers, MapReduce, BigTable, Spanner, and other systems infrastructure, has increased the output of other engineers at Google by over an order of magnitude. It’s no wonder why Google created the engineering level of Senior Google Fellow essentially for him.
+You develop sufficient expertise to consult on software or experiment designs from other engineering teams, and your feedback is valuable enough that it shaves days or weeks worth of work or it turns key projects from failures into successes.
+You become an expert on a deep, technical field that is material to a growing company. For example, you become a machine learning expert and then work on news feed ranking at Facebook, ads ranking at Google, or search ranking at Airbnb. The projects you ship directly translate into growth and revenue for the company.
+You identify a critical business opportunity, perhaps by working with the sales and business teams, and you become part of the founding team within the company to build out a product to address that need.
+You build out onboarding and mentoring programs to teach and train other engineers, and you make them significantly more valuable members of the team.
+You play a key role in building out a solid hiring process, and you help recruit and close engineering hires.
+You make significant contributions to building the engineering brand for your company. For example, if diversity is a strong part of your engineering brand, you may move forward the state of diversity in hiring in the industry.
