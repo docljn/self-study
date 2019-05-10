@@ -28,12 +28,13 @@ Personal Learning Time
   - https://realworldcoding.io/how-to-google-programming-problems-effectively-90f2a43ef982
   - https://jamesclear.com/taking-action
   - https://www.programmerinterview.com/index.php/php-questions/php-self-vs-static/
-  - http://rosettacode.org/wiki/Rosetta_Code
   - https://github.com/mtdvio/every-programmer-should-know
   - https://medium.com/@markpapadakis/interesting-codebases-159fec5a8cc
   - https://zellwk.com/blog/think/
   - https://hackernoon.com/stop-abusing-virtual-animals-when-teaching-programming-a64adc93525a
   - https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d
+  - https://dev.to/peter/programmers-should-be-good-at-email-too-here-is-my-guide-to-leveling-up-your-gmail-game
+  - http://third-bit.com/2019/04/16/what-docs-when.html
 - javascript
   - https://gist.github.com/remarkablemark/fa62af0a2c57f5ef54226cae2258b38d
   - https://github.com/getify/You-Dont-Know-JS
@@ -68,6 +69,7 @@ Personal Learning Time
   - you need tests one level up from the structural changes you are trying to make
 - writing good code
   - consider https://vimeo.com/136245794
+  - jsdoc: http://usejsdoc.org/
   - https://www.ibm.com/developerworks/library/os-php-7oohabits/index.html
   - https://daedtech.com/rethinking-assert-with-shouldly/
   - https://twitter.com/jamesmh_dev/status/1080455811048984576
@@ -143,13 +145,22 @@ Personal Learning Time
   - https://gamestorming.com/post-up/
   - https://learn.hiredthought.com/
   - https://dev.to/gonedark/building-products---building-an-audience-519f
+  - https://kellanem.com/notes/on-team-size
 - communicating with directors
   - NB: http://eleganthack.com/the-dreaded-weekly-status-email/
   - https://twitter.com/xaprb/status/1061772293943291904
   - https://decker.com/wp-content/uploads/2015/08/The_Decker_Grid.pdf
   - https://availagility.co.uk/2016/07/11/strategy-deployment-and-spotify-rhythm/
+- scrum & Agile
+  - https://www.quickscrum.com/ScrumGuide/182/sg-Sprint-Retrospective-Meeting  
+  - https://www.leadingagile.com/the-company/resources/
+  - https://www.leadingagile.com/2012/08/simple-cheat-sheet-to-sprint-planning-meeting/
+  - https://www.neilkillick.com/blog/useful-metrics-for-agile-teams  
 - leadership
+  - https://medium.com/@johnpcutler/team-health-a-daily-checkup-2acebe65f6da
   - http://bikeshed.com/
+  - https://monzo.com/blog/2018/06/27/engineering-management-at-monzo/
+  - https://larahogan.me/
   - https://www.linkedin.com/pulse/mathematics-leadership-how-overcome-productivity-collapse-mark-logan/
   - http://www.theriotpoint.com/
   - http://everydaylean.info/project/independence-devo-max-and-centralisation-power-structures-in-delivery-organisations/
@@ -163,7 +174,6 @@ Personal Learning Time
   - https://kellanem.com/notes/five-years-building-a-culture
   - https://kellanem.com/notes/towards-an-understanding-of-technical-debt
   - https://www.codewithjason.com/make-organization-attractive-engineering-talent/
-  - https://www.neilkillick.com/blog/useful-metrics-for-agile-teams
   - https://www.neilkillick.com/blog/the-business-case-for-limiting-wip
   - https://docs.google.com/document/d/140Hhq9cS_2FUw8LPqtPm4JFZapcIySr60vAyAmMBFGM/edit
   - https://medium.com/shopback-engineering/from-software-engineer-to-engineering-manager-66aed32d219d
@@ -191,6 +201,8 @@ Personal Learning Time
   - https://pure.tue.nl/ws/files/47500481/20161208_Hout_van_den.pdf
 - product development
   - https://hbr.org/2012/05/six-myths-of-product-development
+  - https://gojko.net/posts.html
+  - https://gojko.net/2014/11/17/how-to-get-the-most-out-of-impact-mapping/
 - sql
   - https://stackoverflow.com/questions/754527/best-way-to-test-sql-queries
   - https://www.quora.com/What-are-the-best-practices-for-testing-long-SQL-queries
