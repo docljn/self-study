@@ -1,5 +1,8 @@
 # Git Fundi
-> Fundi, a word from the Bantu family of African languages, meaning a learned person, usually used for a master-craftsperson, expert or genius.
+*Fundi, a word from the Bantu family of African languages, meaning a learned person, usually used for a master-craftsperson, expert or genius.*
+
+## Introduction to git
+- https://www.coursereport.com/blog/what-is-github
 
 ## Setup
 ### User name and email
@@ -58,6 +61,11 @@
   - ```force = push --force-with-lease```
 - add the changes I've staged to the last commit without any other changes
   - ```fix = commit --amend --no-edit```  
+- find all the branches that include the following string in their name
+  - ```git branch | grep string```  
+- delete all the branches that include the following string in their name
+  - ```git branch -d $(git branch | grep string)```  
+  - if you use -D instead of -d then even non-merged branches will be deleted
 
 
 ## Writing (and ReWriting) Git History

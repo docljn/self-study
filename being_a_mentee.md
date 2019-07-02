@@ -1,0 +1,84 @@
+# Mentoring: Being a Mentee
+- [K Wu @ RailsConf 2018](https://www.youtube.com/watch?v=aNnBowC-2ds)
+
+## Background
+- mentor vs sponsor (Cate Huston)
+  - mentor: gives you perspective
+  - sponsor: gives you opportunity
+- when it doesn't work
+  - random match of mentor and mentee with good intentions but no real agenda
+  - nothing changes as a result of the relationship
+- when it does work
+  - get jobs you don't think you're qualified for
+  - career change
+  - conference talk opportunities
+  - salary negotiation coaching
+- to be a good mentor you need
+  - experience
+  - aptitude
+- to find a good mentor you need
+  - to be comfortable with asking for help from others
+  - to play to your strengths and interests
+  - get creative
+- why would you want a mentor anyway?
+  - it's good for your career
+  - it helps to demystify the world
+  - it helps you understand your options
+  - if you can learn something the easy way rather than the hard way, why not?
+
+## ok what can I do?
+- always be mentee-ing
+  - short term is just fine
+  - e.g. I want to give my first conference talk, can you help?
+  - design your relationship
+- find your kindred spirits
+  - they don't need to accept the name/title in order for you to learn from them
+- who might make a good mentor?
+  - similar personality and communication style
+  - different experiences or surprising thinking
+  - someone you admire and can also be vulnerable with
+- redefine networking
+  - getting to know people without strings
+  - giving positive, thoughtful feedback
+  - sharing their projects with others
+  - taking people up on their offers of help
+- embrace the awkward
+- make it easy for the person to say yes
+  - conversations vs emails : each person will have a preference
+  - offer a few options on scheduling, time and location
+  - take the initiative on the administrivia
+  - no homework needed for your mentor: they just need to be present
+- keep it low-key and casual
+  - if you can, call it an 'unofficial mentor'
+  - be specific about why you're reaching out to that specific person
+    - e.g. I'm reall interested in your opinion on, or I really respect your work on...
+- make it easy for them to help
+  - it's ok not to know what to talk about
+  - ask for experiences/stories rather than advice, and then look for patterns/insights
+  - sample topics:
+    - problem solving re current dilemmas, options, feedback on yout proposed solutions
+    - decision making
+      - anything that's every mentioned as case-by-case
+      - technical intuition
+      - what made you decide to..?
+      - what factors should be considered
+      - what would have lead to a different decision
+    - behind the scenes
+      - how much effort did it actually take to hone those skills
+      - how did you do that
+      - what was your strategy to achieve your goal
+      - how did you work through a mistake
+    - personal feedback
+      - what do you see in my performance/approach that I could do better
+      - I want to get from X to Y in my career: what do you think I should be focussing on, and what kind of path would be most helpful.
+      - how can I be perceived as more...?
+      - what would be helpful for me to learn about?
+- you don't have to take all the advice that you are given
+  - think about it, consider it, and discuss it
+- make it feel rewarding to mentor you
+  - not literal gifts!
+  - specific thank you messages: tell them how you made use of their advice
+  - follow up and stay in touch
+  - people love to hear from you when you don't want something from them
+- pay it forward, and mentor others
+  - https://github.com/thoughtbot/apprenticeship/blob/master/mentor-handbook.md
