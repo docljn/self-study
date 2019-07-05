@@ -35,6 +35,10 @@ Personal Learning Time
   - https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d
   - https://dev.to/peter/programmers-should-be-good-at-email-too-here-is-my-guide-to-leveling-up-your-gmail-game
   - http://third-bit.com/2019/04/16/what-docs-when.html
+  - https://medium.com/swlh/application-advice-from-a-full-time-applier-34d05d568f2
+  - https://speakerdeck.com/lornajane/debugging-http
+  - https://speakerdeck.com/rowan_m/building-better-developers-2
+  - http://jessewarden.com/2017/11/asynchronous-programming.html
 - javascript
   - https://gist.github.com/remarkablemark/fa62af0a2c57f5ef54226cae2258b38d
   - https://github.com/getify/You-Dont-Know-JS
@@ -55,6 +59,7 @@ Personal Learning Time
   - https://github.com/kamranahmedse/git-standup
   - https://www.annashipman.co.uk/jfdi/good-pull-requests.html
   - https://ardalis.com/clean-up-unused-git-branches
+  - https://git-scm.com/book/en/v2
   - `git branch --list 'pattern*' | xargs git branch -d`
 - objects and message passing
   - https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose
@@ -67,6 +72,7 @@ Personal Learning Time
   - learn how to write integration tests
   - if you need to refactor your code structure unit tests are not going to help
   - you need tests one level up from the structural changes you are trying to make
+  - https://medium.com/pacroy/separate-unit-integration-and-functional-tests-for-continuous-delivery-f4dc240d8f2f
 - writing good code
   - consider https://vimeo.com/136245794
   - jsdoc: http://usejsdoc.org/
@@ -78,10 +84,14 @@ Personal Learning Time
   - https://mcfunley.com/choose-boring-technology?ref=related
   - https://medium.freecodecamp.org/our-team-broke-up-with-instant-legacy-releases-and-you-can-too-d129d7ae96bb
   - https://www.hanselminutes.com/165/working-effectively-with-legacy-code-with-michael-feathers
-- design patterns
+  - http://bestpractices.thecodingmachine.com/
+- design patterns etc
   - https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md
   - https://www.productivecsharp.com/ send to Alison?
   - https://sourcemaking.com/design_patterns
+  - https://sourcemaking.com/antipatterns
+  - https://sourcemaking.com/refactoring
+  - https://sourcemaking.com/uml
 - Vue & VueX?
   - https://www.thepolyglotdeveloper.com/2017/10/consume-api-data-http-vuejs-web-application/
   - https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
@@ -115,6 +125,8 @@ Personal Learning Time
 - PHP tutorials:
   - http://www.zentut.com/php-tutorial/
   - https://docstore.mik.ua/orelly/webprog/php/index.htm
+  - https://derickrethans.nl/talks/xdebug-phpnw13 (old, but still useful I think)
+  - https://phptherightway.com/
 - dependency injection
   - Auryn Injectors (argh)
   - http://fabien.potencier.org/what-is-dependency-injection.html
@@ -156,7 +168,11 @@ Personal Learning Time
   - https://www.leadingagile.com/the-company/resources/
   - https://www.leadingagile.com/2012/08/simple-cheat-sheet-to-sprint-planning-meeting/
   - https://www.neilkillick.com/blog/useful-metrics-for-agile-teams  
+  - http://modernagile.org/
 - leadership
+  - http://blog.robbowley.net/2009/07/25/the-roles-and-responsibilities-of-a-software-team/
+  - https://www.youtube.com/watch?v=xDbmhR9FSJ0
+  - https://blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html
   - https://medium.com/@johnpcutler/team-health-a-daily-checkup-2acebe65f6da
   - http://bikeshed.com/
   - https://monzo.com/blog/2018/06/27/engineering-management-at-monzo/
@@ -258,7 +274,20 @@ Personal Learning Time
   - https://docker-curriculum.com/
   - https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b
   - https://www.youtube.com/watch?v=V9IJj4MzZBc
-
+  - https://medium.com/the-code-review/to-boldly-log-debug-docker-apps-effectively-using-logs-options-tail-and-grep-53d2e655abcb
+- node
+  - https://www.reddit.com/r/webdev/comments/apiqdg/a_nodejs_crash_course_in_90_minutes/
+  - https://www.freecodecamp.org/news/nodejs-course/
+  - https://www.agilealliance.org/resources/sessions/node-js-crash-course/
+  - https://dzone.com/articles/nodejs-crash-course
+  - https://www.clarkio.com/2017/04/25/debugging-in-nodejs/
+  - https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html
+  - https://lodash.com/
+  - https://medium.com/@jesterxl/introduction-bde654b5670e
+  - https://www.youtube.com/watch?v=fBNz5xF-Kx4
+  - https://www.youtube.com/watch?v=bOYFJrbSFsQ
+  - https://www.youtube.com/watch?v=TlB_eWDSMt4
+  -
 - watson
   - https://tailordev.github.io/Watson/
   - https://tailordev.github.io/Watson/user-guide/commands/
