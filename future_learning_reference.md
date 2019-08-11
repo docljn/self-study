@@ -1,6 +1,67 @@
-Personal Learning Time
-===========================
+# Personal Learning Time
 
+- vs code
+  - <https://code.visualstudio.com/docs/editor/userdefinedsnippets?wt.mc_id=devto-blog-chnoring>
+  - <https://vscodecandothat.com>
+
+- ruby / rails
+  - <https://www.rubytapas.com/2018/06/05/barewords/>
+  - <https://learnrubythehardway.org/book/>
+  - <techotopia.com/index.php/Ruby_Essentials>
+  - <http://poignant.guide/>
+  - <https://www.freecodecamp.org/news/lets-create-an-intermediate-level-ruby-on-rails-application-d7c6e997c63f/>
+  - <http://railsapps.github.io/>
+  - <https://www.railstutorial.org/book/beginning>
+
+- design patterns etc
+  - <https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md>
+  - <https://www.productivecsharp.com/> send to Alison?
+  - <https://sourcemaking.com/design_patterns>
+  - <https://sourcemaking.com/antipatterns>
+  - <https://sourcemaking.com/refactoring>
+  - <https://sourcemaking.com/uml>
+  - MOOC
+
+- writing good code
+  - consider <https://vimeo.com/136245794>
+  - jsdoc: <http://usejsdoc.org/>
+  - <https://www.ibm.com/developerworks/library/os-php-7oohabits/index.html>
+  - <https://daedtech.com/rethinking-assert-with-shouldly/>
+  - <https://twitter.com/jamesmh_dev/status/1080455811048984576>
+  - <https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/>
+  - <https://hackernoon.com/how-i-boost-my-development-environment-to-focus-on-task-at-hand-9dbfc13b7829>
+  - <https://mcfunley.com/choose-boring-technology?ref=related>
+  - <https://medium.freecodecamp.org/our-team-broke-up-with-instant-legacy-releases-and-you-can-too-d129d7ae96bb>
+  - <https://www.hanselminutes.com/165/working-effectively-with-legacy-code-with-michael-feathers>
+  - <http://bestpractices.thecodingmachine.com/>
+
+- git
+  - add to docs: Git Standup tool!!!!
+  - redo Git Lost slides
+  - <https://learngitbranching.js.org/>
+  - <https://git-scm.com/book/en/v2>
+  - <https://www.atlassian.com/git/tutorials/saving-changes/git-stash>
+  - <https://github.com/kamranahmedse/git-standup>
+  - <https://www.annashipman.co.uk/jfdi/good-pull-requests.html>
+  - <https://ardalis.com/clean-up-unused-git-branches>
+  - <https://git-scm.com/book/en/v2>
+  - <https://www.makeuseof.com/tag/start-forking-open-source-inspiration-comes-to-cooking-recipes-with-fork-the-cookbook/>
+  - delete all branches with a name including the given pattern
+    - ```git branch --list 'pattern*' | xargs git branch -d```
+
+- docker
+  - <https://dev.to/kojikanao/15-docker-commands-for-beginners-4m4d>
+  - <https://dev.to/aduranil/10-docker-compose-and-docker-commands-that-are-useful-for-active-development-22f9>
+  - <https://linuxconfig.org/a-hands-on-introduction-to-docker-containers>
+  - <https://www.toptal.com/devops/getting-started-with-docker-simplifying-devops>
+  - <https://hackaday.com/2018/09/05/intro-to-docker-why-and-how-to-use-containers-on-any-system/>
+  - <https://www.edureka.co/blog/docker-tutorial>
+  - <https://www.linode.com/docs/applications/containers/introduction-to-docker/>
+  - <https://docker-curriculum.com/>
+  - <https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b>
+  - <https://www.youtube.com/watch?v=V9IJj4MzZBc>
+  - <https://medium.com/the-code-review/to-boldly-log-debug-docker-apps-effectively-using-logs-options-tail-and-grep-53d2e655abcb>
+  
 - junior dev
   - <https://medium.freecodecamp.org/mistakes-i-have-made-as-a-junior-developer-85260bdb992f>
   - <https://threadreaderapp.com/thread/1112408925234757632.html>
@@ -40,59 +101,40 @@ Personal Learning Time
   - <https://speakerdeck.com/lornajane/debugging-http>
   - <https://speakerdeck.com/rowan_m/building-better-developers-2>
   - <http://jessewarden.com/2017/11/asynchronous-programming.html>
+  - <https://dev.to/codemouse92/the-cranky-developer-manifesto--24km>
+
 - javascript
   - <https://gist.github.com/remarkablemark/fa62af0a2c57f5ef54226cae2258b38d>
   - <https://github.com/getify/You-Dont-Know-JS>
+
 - learning and memory
   - <https://medium.freecodecamp.org/use-spaced-repetition-with-anki-to-learn-to-code-faster-7c334d448c3c>
-- PODFather Logging
-  - <https://podfather.atlassian.net/wiki/dosearchsite.action?cql=siteSearch+~+%22logging%22&queryString=logging>
+
 - google guides
   - <https://rework.withgoogle.com/guides/>
+
 - vim
   - <https://vim.fandom.com/wiki/Tutorial>
   - <https://vim-adventures.com/>
-- git
-  - add to docs: Git Standup!!!!
-  - <https://learngitbranching.js.org/>
-  - <https://git-scm.com/book/en/v2>
-  - <https://www.atlassian.com/git/tutorials/saving-changes/git-stash>
-  - <https://github.com/kamranahmedse/git-standup>
-  - <https://www.annashipman.co.uk/jfdi/good-pull-requests.html>
-  - <https://ardalis.com/clean-up-unused-git-branches>
-  - <https://git-scm.com/book/en/v2>
-  - ```git branch --list 'pattern*' | xargs git branch -d```
+
 - objects and message passing
   - <https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose>
   - <https://www.yegor256.com/2014/09/16/getters-and-setters-are-evil.html>
+
 - jQuery
   - <http://jqfundamentals.com/chapter/jquery-basics>
+
 - katas
   - <http://codingdojo.org/kata/>
+  - <https://youtu.be/F3DV9YDeA6Q>
+    - <https://github.com/emilybache/KataTrainReservation>
+
 - testing
   - learn how to write integration tests
   - if you need to refactor your code structure unit tests are not going to help
   - you need tests one level up from the structural changes you are trying to make
   - <https://medium.com/pacroy/separate-unit-integration-and-functional-tests-for-continuous-delivery-f4dc240d8f2f>
-- writing good code
-  - consider <https://vimeo.com/136245794>
-  - jsdoc: <http://usejsdoc.org/>
-  - <https://www.ibm.com/developerworks/library/os-php-7oohabits/index.html>
-  - <https://daedtech.com/rethinking-assert-with-shouldly/>
-  - <https://twitter.com/jamesmh_dev/status/1080455811048984576>
-  - <https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/>
-  - <https://hackernoon.com/how-i-boost-my-development-environment-to-focus-on-task-at-hand-9dbfc13b7829>
-  - <https://mcfunley.com/choose-boring-technology?ref=related>
-  - <https://medium.freecodecamp.org/our-team-broke-up-with-instant-legacy-releases-and-you-can-too-d129d7ae96bb>
-  - <https://www.hanselminutes.com/165/working-effectively-with-legacy-code-with-michael-feathers>
-  - <http://bestpractices.thecodingmachine.com/>
-- design patterns etc
-  - <https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md>
-  - <https://www.productivecsharp.com/> send to Alison?
-  - <https://sourcemaking.com/design_patterns>
-  - <https://sourcemaking.com/antipatterns>
-  - <https://sourcemaking.com/refactoring>
-  - <https://sourcemaking.com/uml>
+
 - Vue & VueX?
   - <https://www.thepolyglotdeveloper.com/2017/10/consume-api-data-http-vuejs-web-application/>
   - <https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html>
@@ -106,14 +148,6 @@ Personal Learning Time
   - <https://hackr.io/tutorials/learn-vue-js>
   - <https://www.vuemastery.com/courses/advanced-components/template-compilation>
 
-- Doctrine ORM
-  - <https://www.doctrine-project.org/>
-  - <https://symfony.com/doc/current/doctrine.html>
-  - <https://linuxconfig.org/introduction-to-the-doctrine-orm-and-data-mapper-pattern-in-php>
-  - <https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/tutorials/getting-started.html>
-  - <https://ocramius.github.io/blog/a-simple-doctrine-2-orm-tutorial/>
-  - <https://www.youtube.com/watch?v=kfiKn5c9l84>
-
 - TDD
   - <https://moonmaster9000.github.io/hexagonal_tdd_in_ruby/>
   - <https://itnext.io/the-missing-practical-step-by-step-test-driven-development-a7140ca4b71>
@@ -121,30 +155,21 @@ Personal Learning Time
   - <https://github.com/subsecondtdd/todo>
   - <https://medium.com/@fagnerbrack/code-review-and-test-driven-development-4c19b69b5761>
   - <http://blog.ploeh.dk/2018/11/12/what-to-test-and-not-to-test/>
-- Criteria
-  - the Symfony 1 book...
-- PHP tutorials:
-  - <http://www.zentut.com/php-tutorial/>
-  - <https://docstore.mik.ua/orelly/webprog/php/index.htm>
-  - <https://derickrethans.nl/talks/xdebug-phpnw13> (old, but still useful I think)
-  - <https://phptherightway.com/>
-- dependency injection
-  - Auryn Injectors (argh)
-  - <http://fabien.potencier.org/what-is-dependency-injection.html>
-- Chiquita's notes: <https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d>
-- PhpStorm: built in tutorial
+
 - BDD
   - <https://theitriskmanager.com/2018/03/11/bdd-done-easy-the-cotswold-way/>
   - <https://semaphoreci.com/community/tutorials/behavior-driven-development>
-  - Behat BDD for PHP (<http://behat.org/en/latest/)>
+
 - OOD
   - <https://a-nickels-worth.blogspot.com/2006/08/eop.html>
   - <http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod>
   - revise CRC cards and introduce in lightning talk?  <https://www.javaworld.com/article/2073723/core-java/why-getter-and-setter-methods-are-evil.html?page=2>
   - ask Jonathan Wilkins to borrow their copy of POODR
+
 - review DDD
   - <https://www.youtube.com/watch?v=aKBkpLj9-88>
   - <http://dddcommunity.org/>
+
 - code review
   - <https://medium.freecodecamp.org/unlearning-toxic-behaviors-in-a-code-review-culture-b7c295452a3c>
   - <https://tuple.app/pair-programming-guide>
@@ -279,17 +304,7 @@ Personal Learning Time
 - SaaS
   - <https://docs.google.com/document/d/1bAe_4xrafaiqyaO8aQhbDOJlZ5qfp7rW_BJZ1t1Q8mE/edit#>
 
-- docker
-  - <https://dev.to/aduranil/10-docker-compose-and-docker-commands-that-are-useful-for-active-development-22f9>
-  - <https://linuxconfig.org/a-hands-on-introduction-to-docker-containers>
-  - <https://www.toptal.com/devops/getting-started-with-docker-simplifying-devops>
-  - <https://hackaday.com/2018/09/05/intro-to-docker-why-and-how-to-use-containers-on-any-system/>
-  - <https://www.edureka.co/blog/docker-tutorial>
-  - <https://www.linode.com/docs/applications/containers/introduction-to-docker/>
-  - <https://docker-curriculum.com/>
-  - <https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b>
-  - <https://www.youtube.com/watch?v=V9IJj4MzZBc>
-  - <https://medium.com/the-code-review/to-boldly-log-debug-docker-apps-effectively-using-logs-options-tail-and-grep-53d2e655abcb>
+
 
 - node
   - <https://www.reddit.com/r/webdev/comments/apiqdg/a_nodejs_crash_course_in_90_minutes/>
@@ -317,11 +332,10 @@ Personal Learning Time
   - <https://hackernoon.com/15-html-element-methods-youve-potentially-never-heard-of-fc6863e41b2a>
   - <https://dev.to/ananyaneogi/html-can-do-that-c0n>
 
-- <https://dev.to/richharris/why-i-don-t-use-web-components-2cia>
+- svelte framework
+  - <https://dev.to/richharris/why-i-don-t-use-web-components-2cia>
 
 - to add:
-  - <https://youtu.be/F3DV9YDeA6Q>
-  - <https://github.com/emilybache/KataTrainReservation>
-  - 'Golden Master'
+  - 'Golden Master refactoring'
     - all inputs are passed through original legacy code *and* refactored version
     - the output of both should be identical while refactoring
