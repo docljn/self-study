@@ -3,8 +3,10 @@
 - vs code
   - <https://code.visualstudio.com/docs/editor/userdefinedsnippets?wt.mc_id=devto-blog-chnoring>
   - <https://vscodecandothat.com>
+  - <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>
 
 - ruby / rails
+  - <https://guides.rubyonrails.org/index.html>
   - <https://www.rubytapas.com/2018/06/05/barewords/>
   - <https://learnrubythehardway.org/book/>
   - <techotopia.com/index.php/Ruby_Essentials>
@@ -12,6 +14,9 @@
   - <https://www.freecodecamp.org/news/lets-create-an-intermediate-level-ruby-on-rails-application-d7c6e997c63f/>
   - <http://railsapps.github.io/>
   - <https://www.railstutorial.org/book/beginning>
+  - <https://github.com/railslink/resources/wiki/Guide-to-Learning-Ruby-on-Rails>
+  - <https://www.youtube.com/watch?v=15bbxWGTp6c>
+  - <https://www.driftingruby.com/episodes/working-with-large-data>
 
 - design patterns etc
   - <https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md>
@@ -21,6 +26,9 @@
   - <https://sourcemaking.com/refactoring>
   - <https://sourcemaking.com/uml>
   - MOOC
+
+- regex
+  - <https://www.janmeppe.com/blog/regex-for-noobs/>
 
 - writing good code
   - consider <https://vimeo.com/136245794>
@@ -34,6 +42,7 @@
   - <https://medium.freecodecamp.org/our-team-broke-up-with-instant-legacy-releases-and-you-can-too-d129d7ae96bb>
   - <https://www.hanselminutes.com/165/working-effectively-with-legacy-code-with-michael-feathers>
   - <http://bestpractices.thecodingmachine.com/>
+  - <https://12factor.net>
 
 - git
   - add to docs: Git Standup tool!!!!
@@ -102,6 +111,7 @@
   - <https://speakerdeck.com/rowan_m/building-better-developers-2>
   - <http://jessewarden.com/2017/11/asynchronous-programming.html>
   - <https://dev.to/codemouse92/the-cranky-developer-manifesto--24km>
+  - <https://dev.to/codemouse92/how-to-become-a-developer-part-1-coding-skills-5fen>
 
 - javascript
   - <https://gist.github.com/remarkablemark/fa62af0a2c57f5ef54226cae2258b38d>
@@ -116,6 +126,8 @@
 - vim
   - <https://vim.fandom.com/wiki/Tutorial>
   - <https://vim-adventures.com/>
+  - <https://github.com/morhetz/gruvbox>
+  - colorscheme inkpot <https://github.com/ciaranm/inkpot>
 
 - objects and message passing
   - <https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose>
@@ -134,6 +146,7 @@
   - if you need to refactor your code structure unit tests are not going to help
   - you need tests one level up from the structural changes you are trying to make
   - <https://medium.com/pacroy/separate-unit-integration-and-functional-tests-for-continuous-delivery-f4dc240d8f2f>
+  - <https://www.youtube.com/watch?v=x8sKpJwq6lY>
 
 - Vue & VueX?
   - <https://www.thepolyglotdeveloper.com/2017/10/consume-api-data-http-vuejs-web-application/>
@@ -282,8 +295,8 @@
 - biases
   - <https://youarenotsosmart.com/2015/10/23/yanss-061-how-to-willfully-alter-your-brains-ability-to-willfully-alter-your-brains-abilities/>
 
-- research customising your shell:
-  - <https://medium.freecodecamp.org/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb22>
+- computer science
+  - <https://www.youtube.com/watch?v=bX3jvD7XFPs&list=PLB2BE3D6CA77BB8F7>
 
 - personal dev:
   - <https://www.ribbonfarm.com/2011/08/19/the-calculus-of-grit/>
@@ -303,8 +316,6 @@
 
 - SaaS
   - <https://docs.google.com/document/d/1bAe_4xrafaiqyaO8aQhbDOJlZ5qfp7rW_BJZ1t1Q8mE/edit#>
-
-
 
 - node
   - <https://www.reddit.com/r/webdev/comments/apiqdg/a_nodejs_crash_course_in_90_minutes/>
@@ -327,6 +338,8 @@
   - <https://opensource.com/article/18/11/command-line-tools-writers?sc_cid=70160000001273HAAQ>
   - <https://twitter.com/ultrasaurus/status/1089560575217086465?s=20>
   - <https://mhoffman.github.io/2015/05/21/how-to-navigate-directories-with-the-shell.html>
+  - <https://www.freecodecamp.org/news/how-to-make-a-badass-matrix-terminal-and-maybe-learn-something-about-code-8abc81c6b7a2/>
+  - <https://medium.freecodecamp.org/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb22>
 
 - random html stuff
   - <https://hackernoon.com/15-html-element-methods-youve-potentially-never-heard-of-fc6863e41b2a>
