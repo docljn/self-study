@@ -2,16 +2,39 @@
 
 - vs code
   - <https://code.visualstudio.com/docs/editor/userdefinedsnippets?wt.mc_id=devto-blog-chnoring>
-  - <https://vscodecandothat.com>
+  - <https://dev.to/thegeoffstevens/vs-code-extensions-you-may-not-have-heard-of-before--5ed3>
+  - <https://vscodecandothat.com
+  - <https://dev.to/tiim/what-s-your-number-one-underrated-vscode-extension-ob1
+  - to highlight the active tab
+    -  in settings.json
+        ```json
+          "workbench.colorCustomizations": {
+            "tab.activeBorder": "#ff0000",
+            "tab.unfocusedActiveBorder": "#000000"
+          }
+        ```
 
 - ruby / rails
-  - <https://www.rubytapas.com/2018/06/05/barewords/>
   - <https://learnrubythehardway.org/book/>
-  - <techotopia.com/index.php/Ruby_Essentials>
+  - <http://techotopia.com/index.php/Ruby_Essentials>
   - <http://poignant.guide/>
   - <https://www.freecodecamp.org/news/lets-create-an-intermediate-level-ruby-on-rails-application-d7c6e997c63f/>
   - <http://railsapps.github.io/>
   - <https://www.railstutorial.org/book/beginning>
+  - <http://rickwinfrey.com/writings/2015/04/28/class-methods-resist-refactoring%3F.html>
+  - <https://codeclimate.com/blog/why-ruby-class-methods-resist-refactoring/>
+  - <https://www.rubytapas.com/2018/06/05/barewords/>
+
+- rspec
+  - <https://emmanuelhayford.com/7-ways-to-selectively-run-rspec-tests/>
+  - <https://www.codeschool.com/courses/testing-with-rspec>
+  - <http://www.theodinproject.com/ruby-programming/introduction-to-rspec>
+  - <https://semaphoreci.com/community/tutorials/getting-started-with-rspec>
+  - <https://relishapp.com/rspec/rspec-core/v/3-4/docs/example-groups/basic-structure-describe-it>
+  - <https://relishapp.com/rspec/rspec-expectations/docs>
+  - <https://relishapp.com/rspec/rspec-expectations/v/3-4/docs/built-in-matchers>
+  - <http://betterspecs.org>
+
 
 - design patterns etc
   - <https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md>
@@ -34,6 +57,7 @@
   - <https://medium.freecodecamp.org/our-team-broke-up-with-instant-legacy-releases-and-you-can-too-d129d7ae96bb>
   - <https://www.hanselminutes.com/165/working-effectively-with-legacy-code-with-michael-feathers>
   - <http://bestpractices.thecodingmachine.com/>
+  - <http://carlosschults.net/en/are-private-methods-a-code-smell/>
 
 - git
   - add to docs: Git Standup tool!!!!
@@ -61,7 +85,7 @@
   - <https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b>
   - <https://www.youtube.com/watch?v=V9IJj4MzZBc>
   - <https://medium.com/the-code-review/to-boldly-log-debug-docker-apps-effectively-using-logs-options-tail-and-grep-53d2e655abcb>
-  
+
 - junior dev
   - <https://medium.freecodecamp.org/mistakes-i-have-made-as-a-junior-developer-85260bdb992f>
   - <https://threadreaderapp.com/thread/1112408925234757632.html>
@@ -183,7 +207,7 @@
   - <https://learn.hiredthought.com/>
   - <https://dev.to/gonedark/building-products---building-an-audience-519f>
   - <https://kellanem.com/notes/on-team-size>
-  
+
 - communicating with directors
   - NB: <http://eleganthack.com/the-dreaded-weekly-status-email/>
   - <https://twitter.com/xaprb/status/1061772293943291904>
@@ -255,6 +279,7 @@
   - <https://www.quora.com/What-are-the-best-practices-for-testing-long-SQL-queries>
   - <https://stackoverflow.com/questions/30710/how-to-unit-test-an-object-with-database-queries>
   - <https://www.jetbrains.com/help/phpstorm/database-console.html>
+  - <https://use-the-index-luke.com/sql/partial-results/fetch-next-page>
 
 - kubernetes
   - <https://www.youtube.com/playlist?list=PLBAFXs0YjviJwCoxSUkUPhsSxDJzpZbJd>
@@ -318,7 +343,7 @@
   - <https://www.youtube.com/watch?v=fBNz5xF-Kx4>
   - <https://www.youtube.com/watch?v=bOYFJrbSFsQ>
   - <https://www.youtube.com/watch?v=TlB_eWDSMt4>
-  
+
 - watson
   - <https://tailordev.github.io/Watson/>
   - <https://tailordev.github.io/Watson/user-guide/commands/>
@@ -339,3 +364,7 @@
   - 'Golden Master refactoring'
     - all inputs are passed through original legacy code *and* refactored version
     - the output of both should be identical while refactoring
+
+- to add:
+  - recommended podcast episodes
+    - https://www.se-radio.net/2019/05/episode-368-bryan-helmig-on-managing-distributed-teams/
