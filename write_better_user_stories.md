@@ -38,7 +38,7 @@
     - involve all stakeholders in selecting the right objective
     - aim for maximum learning for minimum effort/input
   - involve the whole team in writing the stories to achieve that goal in one brainstorming session (12 - 15 max)
-    - more clarity
+    - more clarity around what is actually needed
     - increased creativity
   - visualise user stories with a story map (Jeff Patton)
     - a grid of cards
@@ -70,18 +70,34 @@
     - it does **not** mean a cohesive set of functionality
 - how to split a story
   - make sure the whole team is involved, not just the product owner
-  - think about functional increments aka something that you'd get a progress payment for providing if you were a contractor
+  - think about functional increments 
+    - something that you'd get a progress payment for providing if you were a contractor
     - e.g. a bit of the UI plus the db query to support it
     - aka vertical slices / walking skeletons
-  - consider hardcoding data that will be provided by functionality in subsequent iterations
   - **don't** split along technical boundaries
-- successful story splitting approaches often involves splitting by SPIDR
+- successful story splitting approaches often involves splitting a compound story using SPIDR
   - spike
+    - as a last resort, set aside time for learning rather than building new functionality
   - path
+    - consider the paths through a story and split each path into its own story
+      - look for paths that are big enough to deliver value
+      - don't split out a story for every single path!
+    - if a lot of complexity is in a single step, consider splitting that step into its own story
   - interface
+    - different user interfaces eg. browsers, iOS, Android
+    - complex ui
+      - consider a first iteration without design/bells/whistles like typeahead, then add a better user experience in subsequent iterations
+    - different data types
+      - file import from csv, xlsx, xml, json
   - data
-  - business rule
+    - develop a limited initial story that supports only a subset of the required data
+    - if you're developing a system that uses various factors to predict when a user should take action, consider each factor in separate stories
+    - consider hardcoding data that will be provided by functionality in subsequent iterations
+  - rule
+    - this could be a business rule, an industry standard, a performance requirement
+    - if a rule adds complexity, add it in a subsequent iteration
   - <https://blogs.itemis.com/en/spidr-five-simple-techniques-for-a-perfectly-split-user-story>
+- remember the advantage of splitting a story is getting functionality in front of users and stakeholders more quickly so that you get feedback sooner
 - don't spend too much time trying to split a story
 
 ### Add just enough detail, just in time
