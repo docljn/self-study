@@ -26,6 +26,9 @@
   - <http://rickwinfrey.com/writings/2015/04/28/class-methods-resist-refactoring%3F.html>
   - <https://codeclimate.com/blog/why-ruby-class-methods-resist-refactoring/>
   - <https://www.rubytapas.com/2018/06/05/barewords/>
+  - <https://github.com/railslink/resources/wiki/Guide-to-Learning-Ruby-on-Rails>
+  - <https://www.youtube.com/watch?v=15bbxWGTp6c>
+  - <https://www.driftingruby.com/episodes/working-with-large-data>
 
 - rspec
   - <https://emmanuelhayford.com/7-ways-to-selectively-run-rspec-tests/>
@@ -36,10 +39,6 @@
   - <https://relishapp.com/rspec/rspec-expectations/docs>
   - <https://relishapp.com/rspec/rspec-expectations/v/3-4/docs/built-in-matchers>
   - <http://betterspecs.org>
-
-  - <https://github.com/railslink/resources/wiki/Guide-to-Learning-Ruby-on-Rails>
-  - <https://www.youtube.com/watch?v=15bbxWGTp6c>
-  - <https://www.driftingruby.com/episodes/working-with-large-data>
 
 - design patterns etc
   - <https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md>
