@@ -67,6 +67,15 @@ If you want git to autostage solved conflicts, use `> git config --local rerere.
 
 Unresolved conflicts older than 15 days and resolved conflicts older than 60 days are pruned
 
+### You messed up and don't want to use that resolution
+
+- when you are in the conflict-resolution stage
+- and you haven't added the auto-fix or committed it
+
+```bash
+> git rerere forget FILE_WITH_BAD_MERGE
+```
+
 ## Downsides
 
 - does add overhead in terms of storage etc
