@@ -4,9 +4,40 @@ We use google / duckduckgo / whatever all the time, but most of us have no train
 
 It's a lot easier than it used to be, with natural language search, but far too often you can end up feeling like you're going round in circles
 
+## Sneaking up on the answer
+
+- when you'll know what you're looking for when you find it...
+- School assignment: write a two page report on "The climate of Krasnoyarsk and how it affects the plants, animals and people living there."
+- eh?
+- Start by simply pasting the assignment description into your search engine of choice
+  - scan the results page without actually clicking into anything
+  - if you're lucky, it will work, but usually the results are miles away from what you need
+
+- Search for part of your query: `Krasnoyarsk climate`
+  - again, scan for useful information
+  - `Krasnoyarsk experiences a humid continental climate (Köppen climate classification Dfb)`
+  - `Köppen Classification: Continental Subarctic Climate`
+
+- Change your query to use the new key words you've found:
+- `"humid continental climate"`
+  - `"humid continental climate" AND "plants and animals" AND "adaptation"`
+    - oops, too specific: I've got a page of science journals
+  - `"humid continental climate" AND "plants and animals"`
+    - that's better, but not as much as I'd hoped
+  - `"humid continental climate" plants animals`
+    - bingo: lots of links to general information
+- `"Continental Subarctic Climate" plants animals`
+  - not nearly as much information
+
+- Now I'm worried because I don't know which description is correct
+  - `map:climate zones russia`
+  - `map:krasnoyarsk`
+  - Huh. It looks like the region of Krasnoyarsk includes both of those climatic regions plus true Arctic Tundra as it stretches all the way up to the Northern coast of Siberia
+  - better check if I'm supposed to be researching the city or the region!
+
 ## If the search engine is deliberately misunderstanding you
 
-### Look at the "Searches related to" section on google
+### Look at the "People also ask" and "Searches related to" sections on google
 
 - this shows what google thinks you might also be looking for
 - if it's way off, think about refining your query to exclude some of those keywords
@@ -36,13 +67,13 @@ It's a lot easier than it used to be, with natural language search, but far too 
 
 #### Add operators and additional search words to refine (or expand) results
 
-- `"rails scopes" ruby` increases the desired results 
+- `"rails scopes" ruby` increases the desired results
   - `+` doesn't make any difference as far as I can see, so I assume that's the default
   - the search is NOT case sensitive
 - `"rails scopes" -rifle` or, indeed, `"rails scopes" NOT rifle` reduces the unwanted firearms, but `rails scopes not rifle` will actually return only gun parts
-- use `OR` or `|` with caution as often two separate searches will be more productive than one combined search 
+- use `OR` or `|` with caution as often two separate searches will be more productive than one combined search
   - `("rails scope" OR "rails scopes") ruby` gives general ruby tutorials, and not the specific rails scope(s) information we wanted
-- wildcards `*` can be useful 
+- wildcards `*` can be useful
   - less so now that google automatically includes synonyms and spelling variants
   - more so to make a phrase less specific `"some long error trace * with my code * specifics removed"`
 - adding `"how to"` can increase the number of instructional results as opposed to documentation
@@ -63,7 +94,7 @@ It's a lot easier than it used to be, with natural language search, but far too 
   - useful if you're trying to re-find that really useful article from three weeks ago
 - generally, use the advanced search page for this kind of thing
 
-## Working out what to search for
+## When nothing is working
 
 If the first 5-88 links on the results page of your most recent search have already been visited (and you actually read them rather than just opening a background tab!), and you're no closer to finding a useful answer, you may be looking in the wrong places. It's easy to believe that 'just one more search' will uncover the perfect solution, but...
 
