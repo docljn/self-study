@@ -96,7 +96,7 @@ It's a lot easier than it used to be, with natural language search, but far too 
 
 ## When nothing is working
 
-If the first 5-88 links on the results page of your most recent search have already been visited (and you actually read them rather than just opening a background tab!), and you're no closer to finding a useful answer, you may be looking in the wrong places. It's easy to believe that 'just one more search' will uncover the perfect solution, but...
+If the first 5-8 links on the results page of your most recent search have already been visited (and you actually read them rather than just opening a background tab!), and you're no closer to finding a useful answer, you may be looking in the wrong places. It's easy to believe that 'just one more search' will uncover the perfect solution, but...
 
 Stop, take a break, and think about other ways you could phrase your query
 
