@@ -71,7 +71,7 @@ end
 
 ## Databases
 
-1. Do NOT .gitignore db/schema.rb 
+1. Do NOT .gitignore db/schema.rb
     - you need to able to run `rails db:setup` and `rails db:reset` to restore your database
 
 2. Don't change data inside a migration
@@ -115,7 +115,7 @@ end
     - <https://docs.rubocop.org/en/stable/>
     - you can configure rubocop to ignore known errors
 
-        ```bash 
+        ```bash
         rubocop --auto-gen-config
         ```
 
@@ -160,6 +160,7 @@ end
         Bullet.add_footer = true
     end
     ```
+
 4. oink
    - <https://github.com/noahd1/oink>
    - detects memory leaks so you don't have to keep restarting the server
@@ -169,3 +170,7 @@ end
      - memory usage
      - number of objects instantiated in the request
      - can be used in production short-term
+
+## Weird Bear Traps
+
+- (where User.distinct) will output all users, and none of the following where filters, etc. get hit?

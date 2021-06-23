@@ -29,6 +29,8 @@
   - <https://github.com/railslink/resources/wiki/Guide-to-Learning-Ruby-on-Rails>
   - <https://www.youtube.com/watch?v=15bbxWGTp6c>
   - <https://www.driftingruby.com/episodes/working-with-large-data>
+  - <https://andycroll.com/ruby/clean-up-broken-dev-domains-after-puma-dns_probe_finished_nxdomain/>
+  - <https://christoph.luppri.ch/articles/rails/adding-custom-types-to-your-activerecord-models-with-the-attributes-api/>
 
 - rspec
   - <https://emmanuelhayford.com/7-ways-to-selectively-run-rspec-tests/>
@@ -205,11 +207,14 @@
 - review DDD
   - <https://www.youtube.com/watch?v=aKBkpLj9-88>
   - <http://dddcommunity.org/>
+  - <https://vimeo.com/43598193>
 
-- code review
+- code reviews
   - <https://medium.freecodecamp.org/unlearning-toxic-behaviors-in-a-code-review-culture-b7c295452a3c>
   - <https://tuple.app/pair-programming-guide>
+  - <https://angel.co/blog/pair-programming-a-primer-on-teamwork>
   - <https://vimeo.com/182087729>
+  - <https://tromey.com/blog/?p=436>
 
 - planning/building a project
   - <https://medium.freecodecamp.org/its-a-trap-8-ways-to-tell-you-re-building-something-no-one-wants-ea67299ef14b>
@@ -233,7 +238,8 @@
   - <https://www.neilkillick.com/blog/useful-metrics-for-agile-teams>
   - <http://modernagile.org/>
 
-- leadership
+- leadership & teams
+  - <https://increment.com/>
   - <http://blog.robbowley.net/2009/07/25/the-roles-and-responsibilities-of-a-software-team/>
   - <https://www.youtube.com/watch?v=xDbmhR9FSJ0>
   - <https://blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html>
@@ -277,6 +283,7 @@
   - <https://www.nytimes.com/2015/12/20/opinion/sunday/the-one-question-you-should-ask-about-every-new-job.html>
   - <https://whatsthepont.com/2011/08/14/ritual-dissent-getting-better-proposals-and-dealing-with-saboteurs/>
   - <http://cognitive-edge.com/methods/ritual-dissent/>
+  - <https://justsimply.dev>
 
 - flow
   - <https://pure.tue.nl/ws/files/47500481/20161208_Hout_van_den.pdf>
@@ -372,6 +379,13 @@
 - svelte framework
   - <https://dev.to/richharris/why-i-don-t-use-web-components-2cia>
 
+- cloud / azure / aws
+  - <https://aws.amazon.com/builders-library/>
+
+- timezones
+  - <https://thoughtbot.com/blog/its-about-time-zones>
+  - <https://thoughtbot.com/blog/a-case-study-in-multiple-time-zones>
+
 - to add:
   - 'Golden Master refactoring'
     - all inputs are passed through original legacy code *and* refactored version
@@ -380,3 +394,6 @@
 - to add:
   - recommended podcast episodes
     - https://www.se-radio.net/2019/05/episode-368-bryan-helmig-on-managing-distributed-teams/
+
+- FreeAgent
+  - <https://discuss.fre.ag/t/postman-an-api-testing-tool/631/7>
