@@ -1,19 +1,31 @@
 # Managing Dotfiles
 
-## Bare git repo
+## Setup
 
+1. Create the bare repo
 
+```bash
+git init --bare ~/.dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+config config status.showUntrackedFiles no
+echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+```
 
-## Dotfile managers
+2. Add files to the repo
 
+```bash
+config add .vimrc
+config commit -m "Added .vimrc"
+```
 
+3. Push the repo to your preferred location e.g. github
 
-## Manual Sync
+```bash
+config remote add origin git@github.com:<USERNAME>/<REPONAME>.git
+config branch -M main
+config push -u origin main
 
-- copy your dotfiles into a separate folder which you have set up as a git repo
-- complexity: low
-- effort: high
-- risk: high
+```
 
 
 ## Sources
@@ -32,14 +44,3 @@ https://jratzenboeck.com/tools/2018/04/13/dotfiles.html
 https://kalis.me/dotfiles-automating-macos-system-configuration/
 
 
-### To think about
-
-Ripgrep doesn't automatically discover it - you'll need to set the $RIPGREP_CONFIG_PATH env variable for it to pick it up. I've duffed mine in ~/.config/ripgrep/config to follow the XDG convention.
-
-```bash
-# Don't let ripgrep vomit really long lines to my terminal, and show a preview.
---max-columns=150
---max-columns-preview
-
---smart-case
-```
