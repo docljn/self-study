@@ -16,23 +16,25 @@ Two basic options
 
 ## Performance
 
-An infinitely large, infinitely complex field. I've heard of large companies with multiple teams responsible purely for optimising the db interactions.
+- An infinitely large, infinitely complex field. I've heard of large companies with multiple teams responsible purely for optimising the db interactions.
 
-Design/data modelling is important: both a logical data model and a physical model describing the types of entities to be included in the db.
+- Design/data modelling is important: both a logical data model and a physical model describing the types of entities to be included in the db.
+
+Affected by the type of application
 
 - transactional applications (mainly inserting and updating data) need normalised data to minimise multiple db updates for a single data change and maintain consistency
 - business intelligence applications (mainly reading data) need attention to db load and likely query type
 - data integration applications (a bit of both) needs to find a way to update information in a data warehouse or equivalent while retaining a historical record. Tricky!
 
-How you approach this will depend on where the bottlenecks are (obviously)
-A bear-trap is when the db index becomes too large to hold in memory: performance falls off a cliff
-N+1 queries are a common problem, especially where you're using e.g. React components and a sub-component makes a query to the db. The more items, the more queries.
+How you approach performance will depend on where the bottlenecks are (obviously)
 
-Indexing can speed things up, but it's important to benchmark as it doesn't always work that way, especially if it's a write-heavy application where updating the index with each write can be costly.
-Too many indices is as bad (or worse) than too few: and trust your query optimiser if it doesn't use what should be an available index then you've probably got the wrong index for that query!
-Database partitioning is worth investigating, but does add another layer of complexity.
-CPU/Memory resources will help, up to a point, as will switching to SSD (though be aware that they can fail suddenly and without warning)
-Keeping dependencies up to date is often forgotten. Newer versions are usually more performant, and have a better query optimiser (if you remember to use it!).
+- A bear-trap is when the db index becomes too large to hold in memory: performance falls off a cliff
+- N+1 queries are a common problem, especially where you're using e.g. React components and a sub-component makes a query to the db. The more items, the more queries.
+- Indexing can speed things up, but it's important to benchmark as it doesn't always work that way, especially if it's a write-heavy application where updating the index with each write can be costly.
+- Too many indices is as bad (or worse) than too few: and trust your query optimiser if it doesn't use what should be an available index then you've probably got the wrong index for that query!
+- Database partitioning is worth investigating, but does add another layer of complexity.
+- CPU/Memory resources will help, up to a point, as will switching to SSD (though be aware that they can fail suddenly and without warning)
+- Keeping dependencies up to date is often forgotten. Newer versions are usually more performant, and have a better query optimiser (if you remember to use it!).
 
 ## Pros/Cons
 
