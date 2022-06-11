@@ -55,3 +55,62 @@ I also confirmed, after checking the ftp data, that the timestamps referenced we
 
 - remember that although mongoid has a way to specify indices in the model class this isn't applied until you run the rake task
 - would not change the approach (using the existing xml mapping class) but would have liked to have time to investigate the possibility of moving to Ox (a SAX-based XML parser) to avoid building the entire file tree before parsing (memory intensive)
+
+## The Documentation: Use FTP as the source of data for the Altmetric PubMed Integration
+
+### Context
+
+<https://digital-science.atlassian.net/browse/ICM-104>
+
+#### Why do we need a PubMed Integration?
+
+The Altmetric pipeline uses a number of different centrally-provided document identifiers as part of the process to link a potential mention to a research output and enrich the data held on that research output. The full list of identifiers which are cross-referenced in the process of matching mentions and research outputs is listed in the altmetric-id-mapping README.md. PubMed is one provider of these document identifiers.
+
+The PubmedIdentifierMapping records stored in mongodb contain a subset of the information provided by PubMed about each research output. These records must be kept current in order to ensure that mentions are correctly matched with research outputs.
+
+#### Why was a change necessary?
+
+The automated daily process to keep the local pubmed records in sync with the original data relied on querying the PubMed E-utilities API for a list of identifiers which had been created or updated over the previous 24 hours. The number of PubMed identifiers processed by Altmetric regularly exceeded 10,000 in a 24 hour period.
+
+PubMed announced an E-utilities API change to limit the response to the first 10,000 records.
+
+### Solution Selected
+
+Replace the current PubMed integration with one based on bulk download of files by ftp, maintaining a local copy of the attributes useful to Altmetric in exactly the same format and data store as is currently supported by the API-based integration
+
+Retain the PubMed E-utilities API integration for ad-hoc queries.
+
+#### Justification
+
+This guarantees a complete and correct local collection of PubMed records, and partly complies with PubMed’s suggestion that Altmetric (as a power user of their data) maintain our own mirror.
+
+#### Consequences
+
+There will need to be an annual switchover from one baseline file set to the next, following the process outlined by PubMed, to ensure that the local data continues to be correct and complete.
+
+### Annual Switchover Process
+
+PubMed provide [online documentation](https://www.nlm.nih.gov/databases/download/pubmed_medline_documentation.html) as well as regular updates via the [NLM Technical Bulletin](https://www.nlm.nih.gov/pubs/techbull) and the [EUtilities listserv](https://www.ncbi.nlm.nih.gov/mailman/listinfo/utilities-announce/) on the anticipated dates and effects of the [PubMed end of year processing](https://www.nlm.nih.gov/bsd/policy/yep_background.html).
+
+Once PubMed have confirmed that the new annual baseline dataset is available:
+- Amend the daily import job to use the current (“pubmed22n”) sequence for the pubmed_id_mapping_collection and the pubmed_import_log_collection so that the updatesets do not affect the new baseline data
+- Amend the rake task pubmed:import_baseline to set the correct Thread variables so that the new baseline filesets can be stored locally without affecting the data queried by the altmetric pipeline
+  - a new mongodb collection for the pubmed_id_mapping_collection “pubmed23n”
+  - a new mongodb collection for the pubmed_import_log_collection “pubmed23n_import_logs”
+- Confirm that the data structure used in the PubMed XML has not changed by comparing the sample data file with the local test fixtures in “spec/fixtures/pubmed”
+- Create indices on the two new mongo collections to match those on the currently-in-use collections (Jira ticket for what to do if you forget and need indices added to populated collections)
+- Test the import on staging (!) (and remember the indices on staging AND production!)
+- Import the full baseline file set: historically this has taken up to 10 minutes per compressed file
+- Amend the daily import job to use the new (“pubmed23n”) sequence for the pubmed_id_mapping_collection and the pubmed_import_log_collection
+- Amend the “store_in collection:” defaults for both PubmedIdentifierMapping and PubmedImportLog records to use the new mongodb collections (historic PR)
+- Amend the PubmedRecord mongodb collection in altmetric-afi-connectors to use the new mongodb collection (historic PR)
+- Check if any other applications are querying the mongodb collections directly and amend
+- Confirm that monitoring (sensu?) is functioning on the new collections
+
+### Options Considered
+
+- Do nothing: this option was discounted as it increases the risk of missed and/or mismatched mentions, and loss of customer trust, as the local records will be incorrect.
+- Request the ids of updated PubMed records from the entrez-tools api endpoint at shorter intervals than the current 24h: this option was discounted as the smallest interval that PubMed support is one day meaning we have no way to request smaller update sets
+- Request the ids of new records and updated records from PubMed in two separate queries: this option was discounted as both sets often exceeded 10,000 records/day in May 2022
+- Build & Maintain a full PubMed Mirror based on bulk download of files by ftp which would fulfil the suggestion by PubMed that power users maintain a mirror. It was discounted as it would require a completely new data store and would involve retaining irrelevant data
+- Replace the current PubMed integration with one based on bulk download of files by ftp, maintaining a local copy of the attributes useful to Altmetric in exactly the same format and data store as is currently supported by the API-based integration. Retain the PubMed E-utilities API integration for ad-hoc queries when the PubMed identifier cannot be found in the local copy: selected as the best solution from those considered
